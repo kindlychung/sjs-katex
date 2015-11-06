@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link href="web/css/bootstrap.min.css" rel="stylesheet">
+    <link href="web/css/bootstrap-datepicker3.standalone.min.css" rel="stylesheet">
+</head>
+<body>
+
+<textarea id="mathinput"></textarea>
+<p id="mathoutput"></p>
+<script src="web/katex/katex.min.js"></script>
+<script src="web/katex/contrib/auto-render.min.js"></script>
+<link rel="stylesheet" href="web/katex/katex.min.css">
+<script src="target/scala-2.11/sjs-katex-jsdeps.js"></script>
+<script src="target/scala-2.11/sjs-katex-fastopt.js"></script>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+        //do work
+        vu.co.kaiyin.katexjs.Main().main()
+
+    });
+//    $(function() {
+//        vu.co.kaiyin.sjsdp.Main().main()
+//    })
+</script>
+</body>
+</html>
