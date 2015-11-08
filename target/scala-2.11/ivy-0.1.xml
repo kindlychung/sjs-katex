@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ivy-module version="2.0" xmlns:e="http://ant.apache.org/ivy/extra">
+	<info organisation="vu.co.kaiyin" module="sjs-katex_sjs0.6_2.11" revision="0.1" status="release" publication="20151107003043">
+		<description homepage="https://github.com/kindlychung/sjs-katex">
+		Scala.js facade for katex.js
+		</description>
+	</info>
+	<configurations>
+		<conf name="compile" visibility="public" description=""/>
+		<conf name="runtime" visibility="public" description="" extends="compile"/>
+		<conf name="test" visibility="public" description="" extends="runtime"/>
+		<conf name="provided" visibility="public" description=""/>
+		<conf name="optional" visibility="public" description=""/>
+		
+		
+		
+		
+		<conf name="sources" visibility="public" description=""/>
+		<conf name="docs" visibility="public" description=""/>
+		<conf name="pom" visibility="public" description=""/>
+		
+		
+	</configurations>
+	<publications>
+		<artifact name="sjs-katex_sjs0.6_2.11" type="pom" ext="pom" conf="pom"/>
+		<artifact name="sjs-katex_sjs0.6_2.11" type="jar" ext="jar" conf="compile"/>
+		<artifact name="sjs-katex_sjs0.6_2.11" type="src" ext="jar" conf="sources" e:classifier="sources"/>
+		<artifact name="sjs-katex_sjs0.6_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
+	</publications>
+	<dependencies>
+		
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="compile->default(compile)"/>
+		
+		
+		
+		<dependency org="org.scala-js" name="scalajs-library_2.11" rev="0.6.5" conf="compile->default(compile)"/>
+		<dependency org="org.scala-js" name="scalajs-dom_sjs0.6_2.11" rev="0.8.0" conf="compile->default(compile)"/>
+	</dependencies>
+</ivy-module>
